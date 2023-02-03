@@ -8,7 +8,7 @@ This repo includes an implementation of the penalty-based bilevel gradient desce
  The bilevel (optimization) problem enjoys a wide range of applications; e.g., meta-learning, image processing, hyper-parameter optimization, and reinforcement learning.
  
 ## Implemented algorithms
-- `VPBGD`: [_PBGD_](https://www.google.com/) with lower-level function-value-gap penalty.
+- `V-PBGD`: [_PBGD_](https://www.google.com/) with lower-level function-value-gap penalty.
 - `G-PBGD`: [_PBGD_](https://www.google.com/) with lower-level gradient norm penalty.
 - `RHG`/`ITD`: The reverse hypergradient method, also called the _iterative differentiation_ method introduced in [_Forward and Reverse Gradient-Based Hyperparameter Optimization_](http://proceedings.mlr.press/v70/franceschi17a).
 - `T-RHG`: The truncated reverse hypergradient method introduced in [_Truncated Back-propagation for Bilevel Optimization_](http://proceedings.mlr.press/v70/franceschi17a).
