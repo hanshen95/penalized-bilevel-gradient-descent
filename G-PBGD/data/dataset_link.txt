@@ -1,0 +1,2 @@
+mnist : http://yann.lecun.com/exdb/mnist/
+fashionmnist : https://github.com/zalandoresearch/fashion-mnist
