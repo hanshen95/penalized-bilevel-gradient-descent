@@ -78,6 +78,5 @@ python data_hyper_clean_rhg.py --net MLP --K 100 --lr_inner 0.4
 If you find this repo helpful, please cite the [paper](https://www.google.com/).
 
 ```latex
-@InProceedings{
-}
+Processing
 ```
