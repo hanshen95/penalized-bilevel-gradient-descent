@@ -1,15 +1,15 @@
 ## Introduction
 
 This repo includes an implementation of the penalty-based bilevel gradient descent (PBGD) algorithm presented in the paper
- [_On Penalty-based Bilevel Gradient Descent Method_](https://www.google.com/), along with several other baseline algorithms.
+ [_On Penalty-based Bilevel Gradient Descent Method_](https://arxiv.org/abs/2302.05185), along with several other baseline algorithms.
  
  The algorithms solve the _bilevel optimization problem_:
  $$\min_{x,y}f(x,y)~{\rm s.t. }~y\in\arg\min_y g(x,y).$$
  The bilevel (optimization) problem enjoys a wide range of applications; e.g., meta-learning, image processing, hyper-parameter optimization, and reinforcement learning.
  
 ## Implemented algorithms
-- `V-PBGD`: [_PBGD_](https://www.google.com/) with lower-level function-value-gap penalty.
-- `G-PBGD`: [_PBGD_](https://www.google.com/) with lower-level gradient norm penalty.
+- `V-PBGD`: [_PBGD_](https://arxiv.org/abs/2302.05185) with lower-level function-value-gap penalty.
+- `G-PBGD`: [_PBGD_](https://arxiv.org/abs/2302.05185) with lower-level gradient norm penalty.
 - `RHG`/`ITD`: The reverse hypergradient method, also called the _iterative differentiation_ method introduced in [_Forward and Reverse Gradient-Based Hyperparameter Optimization_](http://proceedings.mlr.press/v70/franceschi17a).
 - `T-RHG`: The truncated reverse hypergradient method introduced in [_Truncated Back-propagation for Bilevel Optimization_](http://proceedings.mlr.press/v70/franceschi17a).
 
@@ -75,8 +75,13 @@ python data_hyper_clean_rhg.py --net MLP --K 100 --lr_inner 0.4
 
 ## Citation
 
-If you find this repo helpful, please cite the [paper](https://www.google.com/).
+If you find this repo helpful, please cite the [paper](https://arxiv.org/abs/2302.05185).
 
 ```latex
-Processing
+@article{shen2023penalty,
+  title={On Penalty-based Bilevel Gradient Descent Method},
+  author={Shen, Han and Chen, Tianyi},
+  journal={arXiv preprint arXiv:2302.05185},
+  year={2023}
+}
 ```
